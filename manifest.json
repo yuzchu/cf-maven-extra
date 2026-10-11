@@ -1,0 +1,580 @@
+{
+ "version": 1,
+ "updated": "2026-10-11",
+ "repos": {
+  "android-sdk": {
+   "repo": "yuzchu/cf-android-sdk",
+   "root": "/opt/android-sdk",
+   "components": [
+    {
+     "id": "build-tools-30",
+     "category": "build-tools",
+     "version": "30",
+     "file": "build-tools_r30.0.3-linux.zip",
+     "size": 53134793,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/build-tools-30/build-tools_r30.0.3-linux.zip",
+     "dest": "build-tools/30",
+     "stripTop": true
+    },
+    {
+     "id": "build-tools-31",
+     "category": "build-tools",
+     "version": "31",
+     "file": "build-tools_r31-linux.zip",
+     "size": 54931191,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/build-tools-31/build-tools_r31-linux.zip",
+     "dest": "build-tools/31",
+     "stripTop": true
+    },
+    {
+     "id": "build-tools-32",
+     "category": "build-tools",
+     "version": "32",
+     "file": "build-tools_r32-linux.zip",
+     "size": 54940436,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/build-tools-32/build-tools_r32-linux.zip",
+     "dest": "build-tools/32",
+     "stripTop": true
+    },
+    {
+     "id": "build-tools-33",
+     "category": "build-tools",
+     "version": "33",
+     "file": "build-tools_r33-linux.zip",
+     "size": 56000182,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/build-tools-33/build-tools_r33-linux.zip",
+     "dest": "build-tools/33",
+     "stripTop": true
+    },
+    {
+     "id": "build-tools-34",
+     "category": "build-tools",
+     "version": "34",
+     "file": "build-tools_r34-linux.zip",
+     "size": 61224257,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/build-tools-34/build-tools_r34-linux.zip",
+     "dest": "build-tools/34",
+     "stripTop": true
+    },
+    {
+     "id": "build-tools-35",
+     "category": "build-tools",
+     "version": "35",
+     "file": "build-tools_r35-linux.zip",
+     "size": 1449,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/build-tools-35/build-tools_r35-linux.zip",
+     "dest": "build-tools/35",
+     "stripTop": true
+    },
+    {
+     "id": "platform-26",
+     "category": "platform",
+     "version": "26",
+     "file": "platform-26_r02.zip",
+     "size": 63623734,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-26/platform-26_r02.zip",
+     "dest": "platforms/android-26",
+     "stripTop": true
+    },
+    {
+     "id": "platform-27",
+     "category": "platform",
+     "version": "27",
+     "file": "platform-27_r03.zip",
+     "size": 65635348,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-27/platform-27_r03.zip",
+     "dest": "platforms/android-27",
+     "stripTop": true
+    },
+    {
+     "id": "platform-28",
+     "category": "platform",
+     "version": "28",
+     "file": "platform-28_r06.zip",
+     "size": 75565084,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-28/platform-28_r06.zip",
+     "dest": "platforms/android-28",
+     "stripTop": true
+    },
+    {
+     "id": "platform-29",
+     "category": "platform",
+     "version": "29",
+     "file": "platform-29_r05.zip",
+     "size": 78293913,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-29/platform-29_r05.zip",
+     "dest": "platforms/android-29",
+     "stripTop": true
+    },
+    {
+     "id": "platform-30",
+     "category": "platform",
+     "version": "30",
+     "file": "platform-30_r03.zip",
+     "size": 52328361,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-30/platform-30_r03.zip",
+     "dest": "platforms/android-30",
+     "stripTop": true
+    },
+    {
+     "id": "platform-31",
+     "category": "platform",
+     "version": "31",
+     "file": "platform-31_r01.zip",
+     "size": 56475526,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-31/platform-31_r01.zip",
+     "dest": "platforms/android-31",
+     "stripTop": true
+    },
+    {
+     "id": "platform-32",
+     "category": "platform",
+     "version": "32",
+     "file": "platform-32_r01.zip",
+     "size": 66108299,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-32/platform-32_r01.zip",
+     "dest": "platforms/android-32",
+     "stripTop": true
+    },
+    {
+     "id": "platform-33",
+     "category": "platform",
+     "version": "33",
+     "file": "platform-33_r02.zip",
+     "size": 67334130,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-33/platform-33_r02.zip",
+     "dest": "platforms/android-33",
+     "stripTop": true
+    },
+    {
+     "id": "platform-34",
+     "category": "platform",
+     "version": "34",
+     "file": "platform-34_r02.zip",
+     "size": 1449,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-34/platform-34_r02.zip",
+     "dest": "platforms/android-34",
+     "stripTop": true
+    },
+    {
+     "id": "platform-35",
+     "category": "platform",
+     "version": "35",
+     "file": "platform-35_r02.zip",
+     "size": 64273788,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-35/platform-35_r02.zip",
+     "dest": "platforms/android-35",
+     "stripTop": true
+    }
+   ]
+  },
+  "jdk": {
+   "repo": "yuzchu/cf-jdk",
+   "root": "/opt",
+   "components": [
+    {
+     "id": "jdk-11",
+     "category": "jdk",
+     "version": "11",
+     "file": "jdk-11-linux-aarch64.tar.gz",
+     "size": 192356586,
+     "url": "https://github.com/yuzchu/cf-jdk/releases/download/jdk-11/jdk-11-linux-aarch64.tar.gz",
+     "dest": "jdk-11",
+     "stripTop": false
+    },
+    {
+     "id": "jdk-17",
+     "category": "jdk",
+     "version": "17",
+     "file": "jdk-17-linux-aarch64.tar.gz",
+     "size": 191962709,
+     "url": "https://github.com/yuzchu/cf-jdk/releases/download/jdk-17/jdk-17-linux-aarch64.tar.gz",
+     "dest": "jdk-17",
+     "stripTop": false
+    },
+    {
+     "id": "jdk-21",
+     "category": "jdk",
+     "version": "21",
+     "file": "jdk-21-linux-aarch64.tar.gz",
+     "size": 205641175,
+     "url": "https://github.com/yuzchu/cf-jdk/releases/download/jdk-21/jdk-21-linux-aarch64.tar.gz",
+     "dest": "jdk-21",
+     "stripTop": false
+    },
+    {
+     "id": "jdk-8",
+     "category": "jdk",
+     "version": "8",
+     "file": "jdk-8-linux-aarch64.tar.gz",
+     "size": 102617391,
+     "url": "https://github.com/yuzchu/cf-jdk/releases/download/jdk-8/jdk-8-linux-aarch64.tar.gz",
+     "dest": "jdk-8",
+     "stripTop": false
+    }
+   ]
+  },
+  "gradle": {
+   "repo": "yuzchu/cf-gradle",
+   "root": "/opt",
+   "components": [
+    {
+     "id": "gradle-7.0.2",
+     "category": "gradle",
+     "version": "7.0.2",
+     "file": "gradle-7.0.2-bin.zip",
+     "size": 112062163,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-7.0.2/gradle-7.0.2-bin.zip",
+     "dest": "gradle-7.0.2",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-7.1.1",
+     "category": "gradle",
+     "version": "7.1.1",
+     "file": "gradle-7.1.1-bin.zip",
+     "size": 112231447,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-7.1.1/gradle-7.1.1-bin.zip",
+     "dest": "gradle-7.1.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-7.2",
+     "category": "gradle",
+     "version": "7.2",
+     "file": "gradle-7.2-bin.zip",
+     "size": 114352742,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-7.2/gradle-7.2-bin.zip",
+     "dest": "gradle-7.2",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-7.3.3",
+     "category": "gradle",
+     "version": "7.3.3",
+     "file": "gradle-7.3.3-bin.zip",
+     "size": 115768236,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-7.3.3/gradle-7.3.3-bin.zip",
+     "dest": "gradle-7.3.3",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-7.4.2",
+     "category": "gradle",
+     "version": "7.4.2",
+     "file": "gradle-7.4.2-bin.zip",
+     "size": 115852617,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-7.4.2/gradle-7.4.2-bin.zip",
+     "dest": "gradle-7.4.2",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-7.5.1",
+     "category": "gradle",
+     "version": "7.5.1",
+     "file": "gradle-7.5.1-bin.zip",
+     "size": 120635534,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-7.5.1/gradle-7.5.1-bin.zip",
+     "dest": "gradle-7.5.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-7.6.6",
+     "category": "gradle",
+     "version": "7.6.6",
+     "file": "gradle-7.6.6-bin.zip",
+     "size": 128439774,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-7.6.6/gradle-7.6.6-bin.zip",
+     "dest": "gradle-7.6.6",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.0.2",
+     "category": "gradle",
+     "version": "8.0.2",
+     "file": "gradle-8.0.2-bin.zip",
+     "size": 124116070,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.0.2/gradle-8.0.2-bin.zip",
+     "dest": "gradle-8.0.2",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.1.1",
+     "category": "gradle",
+     "version": "8.1.1",
+     "file": "gradle-8.1.1-bin.zip",
+     "size": 124643981,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.1.1/gradle-8.1.1-bin.zip",
+     "dest": "gradle-8.1.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.10.2",
+     "category": "gradle",
+     "version": "8.10.2",
+     "file": "gradle-8.10.2-bin.zip",
+     "size": 136715430,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.10.2/gradle-8.10.2-bin.zip",
+     "dest": "gradle-8.10.2",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.11.1",
+     "category": "gradle",
+     "version": "8.11.1",
+     "file": "gradle-8.11.1-bin.zip",
+     "size": 136920070,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.11.1/gradle-8.11.1-bin.zip",
+     "dest": "gradle-8.11.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.12.1",
+     "category": "gradle",
+     "version": "8.12.1",
+     "file": "gradle-8.12.1-bin.zip",
+     "size": 136556486,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.12.1/gradle-8.12.1-bin.zip",
+     "dest": "gradle-8.12.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.13",
+     "category": "gradle",
+     "version": "8.13",
+     "file": "gradle-8.13-bin.zip",
+     "size": 136983045,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.13/gradle-8.13-bin.zip",
+     "dest": "gradle-8.13",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.14.6",
+     "category": "gradle",
+     "version": "8.14.6",
+     "file": "gradle-8.14.6-bin.zip",
+     "size": 139420601,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.14.6/gradle-8.14.6-bin.zip",
+     "dest": "gradle-8.14.6",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.2.1",
+     "category": "gradle",
+     "version": "8.2.1",
+     "file": "gradle-8.2.1-bin.zip",
+     "size": 128695158,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.2.1/gradle-8.2.1-bin.zip",
+     "dest": "gradle-8.2.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.3",
+     "category": "gradle",
+     "version": "8.3",
+     "file": "gradle-8.3-bin.zip",
+     "size": 130639305,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.3/gradle-8.3-bin.zip",
+     "dest": "gradle-8.3",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.4",
+     "category": "gradle",
+     "version": "8.4",
+     "file": "gradle-8.4-bin.zip",
+     "size": 130979468,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.4/gradle-8.4-bin.zip",
+     "dest": "gradle-8.4",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.5",
+     "category": "gradle",
+     "version": "8.5",
+     "file": "gradle-8.5-bin.zip",
+     "size": 132519731,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.5/gradle-8.5-bin.zip",
+     "dest": "gradle-8.5",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.6",
+     "category": "gradle",
+     "version": "8.6",
+     "file": "gradle-8.6-bin.zip",
+     "size": 132788867,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.6/gradle-8.6-bin.zip",
+     "dest": "gradle-8.6",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.7",
+     "category": "gradle",
+     "version": "8.7",
+     "file": "gradle-8.7-bin.zip",
+     "size": 134184980,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.7/gradle-8.7-bin.zip",
+     "dest": "gradle-8.7",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.8",
+     "category": "gradle",
+     "version": "8.8",
+     "file": "gradle-8.8-bin.zip",
+     "size": 138039528,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.8/gradle-8.8-bin.zip",
+     "dest": "gradle-8.8",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-8.9",
+     "category": "gradle",
+     "version": "8.9",
+     "file": "gradle-8.9-bin.zip",
+     "size": 136114148,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-8.9/gradle-8.9-bin.zip",
+     "dest": "gradle-8.9",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-9.0.0",
+     "category": "gradle",
+     "version": "9.0.0",
+     "file": "gradle-9.0.0-bin.zip",
+     "size": 134491514,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-9.0.0/gradle-9.0.0-bin.zip",
+     "dest": "gradle-9.0.0",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-9.1.0",
+     "category": "gradle",
+     "version": "9.1.0",
+     "file": "gradle-9.1.0-bin.zip",
+     "size": 134528013,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-9.1.0/gradle-9.1.0-bin.zip",
+     "dest": "gradle-9.1.0",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-9.2.1",
+     "category": "gradle",
+     "version": "9.2.1",
+     "file": "gradle-9.2.1-bin.zip",
+     "size": 135535598,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-9.2.1/gradle-9.2.1-bin.zip",
+     "dest": "gradle-9.2.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-9.3.1",
+     "category": "gradle",
+     "version": "9.3.1",
+     "file": "gradle-9.3.1-bin.zip",
+     "size": 137037885,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-9.3.1/gradle-9.3.1-bin.zip",
+     "dest": "gradle-9.3.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-9.4.1",
+     "category": "gradle",
+     "version": "9.4.1",
+     "file": "gradle-9.4.1-bin.zip",
+     "size": 137878901,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-9.4.1/gradle-9.4.1-bin.zip",
+     "dest": "gradle-9.4.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-9.5.1",
+     "category": "gradle",
+     "version": "9.5.1",
+     "file": "gradle-9.5.1-bin.zip",
+     "size": 140320662,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-9.5.1/gradle-9.5.1-bin.zip",
+     "dest": "gradle-9.5.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-9.6.1",
+     "category": "gradle",
+     "version": "9.6.1",
+     "file": "gradle-9.6.1-bin.zip",
+     "size": 140682664,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-9.6.1/gradle-9.6.1-bin.zip",
+     "dest": "gradle-9.6.1",
+     "stripTop": false
+    },
+    {
+     "id": "gradle-9.7.1",
+     "category": "gradle",
+     "version": "9.7.1",
+     "file": "gradle-9.7.1-bin.zip",
+     "size": 151433392,
+     "url": "https://github.com/yuzchu/cf-gradle/releases/download/gradle-9.7.1/gradle-9.7.1-bin.zip",
+     "dest": "gradle-9.7.1",
+     "stripTop": false
+    }
+   ]
+  },
+  "maven": {
+   "repo": "yuzchu/cf-maven-extra",
+   "root": "/opt",
+   "components": [
+    {
+     "id": "maven-agp7.4-kt1.8.22",
+     "category": "maven",
+     "version": "agp7.4-kt1.8.22",
+     "file": "maven-agp7.4-kt1.8.22.tar.gz",
+     "size": 146581382,
+     "url": "https://github.com/yuzchu/cf-maven-extra/releases/download/agp7.4-kt1.8.22/maven-agp7.4-kt1.8.22.tar.gz",
+     "dest": "maven-repo/agp7.4-kt1.8.22",
+     "stripTop": true
+    },
+    {
+     "id": "maven-agp8.0-kt1.8.22",
+     "category": "maven",
+     "version": "agp8.0-kt1.8.22",
+     "file": "maven-agp8.0-kt1.8.22.tar.gz",
+     "size": 148523467,
+     "url": "https://github.com/yuzchu/cf-maven-extra/releases/download/agp8.0-kt1.8.22/maven-agp8.0-kt1.8.22.tar.gz",
+     "dest": "maven-repo/agp8.0-kt1.8.22",
+     "stripTop": true
+    },
+    {
+     "id": "maven-agp8.2-kt1.9.20",
+     "category": "maven",
+     "version": "agp8.2-kt1.9.20",
+     "file": "maven-agp8.2-kt1.9.20.tar.gz",
+     "size": 157360912,
+     "url": "https://github.com/yuzchu/cf-maven-extra/releases/download/agp8.2-kt1.9.20/maven-agp8.2-kt1.9.20.tar.gz",
+     "dest": "maven-repo/agp8.2-kt1.9.20",
+     "stripTop": true
+    },
+    {
+     "id": "maven-agp8.5-kt1.9.24",
+     "category": "maven",
+     "version": "agp8.5-kt1.9.24",
+     "file": "maven-agp8.5-kt1.9.24.tar.gz",
+     "size": 162375889,
+     "url": "https://github.com/yuzchu/cf-maven-extra/releases/download/agp8.5-kt1.9.24/maven-agp8.5-kt1.9.24.tar.gz",
+     "dest": "maven-repo/agp8.5-kt1.9.24",
+     "stripTop": true
+    },
+    {
+     "id": "maven-agp8.7-kt2.0.21",
+     "category": "maven",
+     "version": "agp8.7-kt2.0.21",
+     "file": "maven-agp8.7-kt2.0.21.tar.gz",
+     "size": 161099084,
+     "url": "https://github.com/yuzchu/cf-maven-extra/releases/download/agp8.7-kt2.0.21/maven-agp8.7-kt2.0.21.tar.gz",
+     "dest": "maven-repo/agp8.7-kt2.0.21",
+     "stripTop": true
+    }
+   ]
+  }
+ }
+}
