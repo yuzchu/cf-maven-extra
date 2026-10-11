@@ -1,0 +1,46 @@
+name: Fetch AGP+Kotlin Maven bundles
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve & bundle AGP/Kotlin plugin deps
+        run: |
+          # 每个组合: 用 Gradle 在干净项目里 resolve 依赖, 打包 ~/.gradle/caches/modules-2 相关目录
+          mkdir -p dist
+          bundle() {
+            local agp=$1 kt=$2 tag=$3
+            if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+              echo "skip $tag"; return
+            fi
+            mkdir -p proj && cd proj
+            cat > settings.gradle <<S
+            S
+            cat > build.gradle <<B
+          buildscript {
+            repositories { google(); mavenCentral() }
+            dependencies {
+              classpath "com.android.tools.build:gradle:${agp}"
+              classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kt}"
+            }
+          }
+          B
+            cd ..
+            cd proj
+            gradle help --no-daemon -q >/dev/null 2>&1 || gradle help -q || true
+            cd ..
+            # 打包本组合拉下来的依赖(去重由首次下载保证, 逐组全量打包)
+            tar czf "maven-${tag}.tar.gz" -C ~/.gradle/caches/modules-2 files-2.1 2>/dev/null
+            gh release create "$tag" "maven-${tag}.tar.gz" --repo "$GITHUB_REPOSITORY" --title "Maven bundle AGP ${agp} + Kotlin ${kt}" --notes "AGP ${agp} / Kotlin ${kt} full maven deps"
+            rm -rf proj ~/.gradle/caches/modules-2   # 清理, 下一组干净 resolve
+          }
+          bundle "8.2.0"  "1.9.20" "agp8.2-kt1.9.20"
+          bundle "8.7.3"  "2.0.21" "agp8.7-kt2.0.21"
+          bundle "8.5.2"  "1.9.24" "agp8.5-kt1.9.24"
+          bundle "7.4.2"  "1.8.22" "agp7.4-kt1.8.22"
+          bundle "8.0.2"  "1.8.22" "agp8.0-kt1.8.22"
+        env:
+          GH_TOKEN: ${{ github.token }}
