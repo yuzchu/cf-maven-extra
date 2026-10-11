@@ -1,5 +1,5 @@
 {
- "version": 2,
+ "version": 3,
  "updated": "2026-10-11",
  "repos": {
   "android-sdk": {
@@ -94,6 +94,16 @@
      "size": 64195204,
      "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/build-tools-36.1/build-tools_r36.1_linux.zip",
      "dest": "build-tools/36.1",
+     "stripTop": true
+    },
+    {
+     "id": "build-tools-37",
+     "category": "build-tools",
+     "version": "37",
+     "file": "build-tools_r37_linux.zip",
+     "size": 66135704,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/build-tools-37/build-tools_r37_linux.zip",
+     "dest": "build-tools/37",
      "stripTop": true
     },
     {
@@ -214,6 +224,16 @@
      "size": 66270841,
      "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-36.1/platform-36.1_r01.zip",
      "dest": "platforms/android-36.1",
+     "stripTop": true
+    },
+    {
+     "id": "platform-37.0",
+     "category": "platform",
+     "version": "37.0",
+     "file": "platform-37.0_r02.zip",
+     "size": 67281901,
+     "url": "https://github.com/yuzchu/cf-android-sdk/releases/download/platform-37.0/platform-37.0_r02.zip",
+     "dest": "platforms/android-37.0",
      "stripTop": true
     }
    ]
