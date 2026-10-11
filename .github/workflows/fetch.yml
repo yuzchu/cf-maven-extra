@@ -7,35 +7,30 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-      - name: Resolve & bundle AGP/Kotlin plugin deps
+      - name: Setup Gradle
         run: |
-          # 每个组合: 用 Gradle 在干净项目里 resolve 依赖, 打包 ~/.gradle/caches/modules-2 相关目录
-          mkdir -p dist
+          curl -sL -o gradle.zip https://services.gradle.org/distributions/gradle-8.9-bin.zip
+          unzip -q gradle.zip -d /opt
+          echo "/opt/gradle-8.9/bin" >> $GITHUB_PATH
+      - name: Resolve & bundle AGP/Kotlin deps
+        shell: bash
+        run: |
+          set -e
+          mkdir -p work && cd work
           bundle() {
-            local agp=$1 kt=$2 tag=$3
+            local agp="$1" kt="$2" tag="$3"
             if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-              echo "skip $tag"; return
+              echo "skip $tag (已存在)"; return
             fi
-            mkdir -p proj && cd proj
-            cat > settings.gradle <<S
-            S
-            cat > build.gradle <<B
-          buildscript {
-            repositories { google(); mavenCentral() }
-            dependencies {
-              classpath "com.android.tools.build:gradle:${agp}"
-              classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kt}"
-            }
-          }
-          B
-            cd ..
-            cd proj
-            gradle help --no-daemon -q >/dev/null 2>&1 || gradle help -q || true
-            cd ..
-            # 打包本组合拉下来的依赖(去重由首次下载保证, 逐组全量打包)
-            tar czf "maven-${tag}.tar.gz" -C ~/.gradle/caches/modules-2 files-2.1 2>/dev/null
-            gh release create "$tag" "maven-${tag}.tar.gz" --repo "$GITHUB_REPOSITORY" --title "Maven bundle AGP ${agp} + Kotlin ${kt}" --notes "AGP ${agp} / Kotlin ${kt} full maven deps"
-            rm -rf proj ~/.gradle/caches/modules-2   # 清理, 下一组干净 resolve
+            echo "=== bundle $tag: AGP $agp + Kotlin $kt ==="
+            rm -rf proj ~/.gradle/caches/modules-2
+            mkdir -p proj
+            printf '' > proj/settings.gradle
+            printf 'buildscript {\n  repositories { google(); mavenCentral() }\n  dependencies {\n    classpath "com.android.tools.build:gradle:%s"\n    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:%s"\n  }\n}\n' "$agp" "$kt" > proj/build.gradle
+            ( cd proj && gradle help --no-daemon -q > /dev/null 2>&1 || gradle help -q > /dev/null 2>&1 || echo "resolve warn (继续, 已下载的依赖可用)" )
+            tar czf "maven-${tag}.tar.gz" -C ~/.gradle/caches/modules-2 files-2.1 2>/dev/null || { echo "no cache produced"; return; }
+            echo "bundle size: $(du -m maven-${tag}.tar.gz | cut -f1)MB"
+            gh release create "$tag" "maven-${tag}.tar.gz" --repo "$GITHUB_REPOSITORY" --title "Maven bundle AGP ${agp} + Kotlin ${kt}" --notes "AGP ${agp} / Kotlin ${kt} full maven deps (files-2.1)"
           }
           bundle "8.2.0"  "1.9.20" "agp8.2-kt1.9.20"
           bundle "8.7.3"  "2.0.21" "agp8.7-kt2.0.21"
